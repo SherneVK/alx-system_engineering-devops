@@ -1,2 +1,0 @@
-#!/bin/bash
-echo $((`echo $PATH | GREP -0 ":/" |wc -l`+ 1))
