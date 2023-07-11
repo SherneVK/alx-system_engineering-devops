@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | tr -dc ':' | awk '{ print length }'
+IFS=":" read -ra directories <<< "$PATH"; echo ${#directories[@]}
